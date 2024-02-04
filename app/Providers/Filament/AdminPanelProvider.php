@@ -34,6 +34,7 @@ class AdminPanelProvider extends PanelProvider
                 \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
                 FilamentBackgroundsPlugin::make(),
                 FilamentRouteStatisticsPlugin::make(),
+                \Hasnayeen\Themes\ThemesPlugin::make(),
             ])
             ->default()
             ->id('admin')
@@ -69,6 +70,9 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+            ])
+            ->tenantMiddleware([
+                \Hasnayeen\Themes\Http\Middleware\SetTheme::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
