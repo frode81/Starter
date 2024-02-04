@@ -1,4 +1,4 @@
-# FilamentStartedKit
+# Filament Starter
 
 Filament Starter is a [Filament](https://filamentphp.com/) distribution with lots 
 of pre-installed.
