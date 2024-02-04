@@ -51,5 +51,5 @@ php artisan db:seed
 ```
 
 You can now go to /admin on your site and you should see the filament 
-login screen. Log in with the user you created in step #4 above. 
+login screen. 
 
