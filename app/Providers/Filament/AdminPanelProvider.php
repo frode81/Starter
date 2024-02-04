@@ -20,6 +20,8 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
+use Amendozaaguiar\FilamentRouteStatistics\FilamentRouteStatisticsPlugin;
+
 
 
 class AdminPanelProvider extends PanelProvider
@@ -31,6 +33,7 @@ class AdminPanelProvider extends PanelProvider
                 \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
                 \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
                 FilamentBackgroundsPlugin::make(),
+                FilamentRouteStatisticsPlugin::make(),
             ])
             ->default()
             ->id('admin')

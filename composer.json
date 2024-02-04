@@ -10,8 +10,10 @@
     ],
     "require": {
         "php": "^8.1",
+        "amendozaaguiar/filament-route-statistics": "^2.5",
         "bezhansalleh/filament-exceptions": "^2.1",
         "bezhansalleh/filament-shield": "^3.1",
+        "bilfeldt/laravel-route-statistics": "^3.1",
         "filament/filament": "^3.2",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
