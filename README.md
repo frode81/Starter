@@ -32,7 +32,7 @@ For the FilamentShield install, answer "yes" to all questions it asks.
 Seed First Tenant 
 
 
-You can customize your tenant team name at database\Seeders\FirstTenantSeeder Min Shin Saw will be default
+You can customize your tenant team name at database\Seeders\FirstTenantSeeder IMX will be default
 
 
 
