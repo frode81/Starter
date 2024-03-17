@@ -29,13 +29,6 @@ class AdminPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->plugins([
-                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
-                \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
-                FilamentBackgroundsPlugin::make(),
-                FilamentRouteStatisticsPlugin::make(),
-                \Hasnayeen\Themes\ThemesPlugin::make(),
-            ])
             ->default()
             ->id('admin')
             ->path('admin')
@@ -47,6 +40,13 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Indigo,
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
+            ])
+            ->plugins([
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+                \BezhanSalleh\FilamentExceptions\FilamentExceptionsPlugin::make(),
+                FilamentBackgroundsPlugin::make(),
+                FilamentRouteStatisticsPlugin::make(),
+                \Hasnayeen\Themes\ThemesPlugin::make(),
             ])
             ->brandLogo(fn () => view('components.logo'))
             ->font('Poppins')
